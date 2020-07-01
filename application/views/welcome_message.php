@@ -1,89 +1,205 @@
-<?php
-defined('BASEPATH') OR exit('No direct script access allowed');
-?><!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+
+<html lang="es">
+
 <head>
-	<meta charset="utf-8">
-	<title>Welcome to CodeIgniter</title>
 
-	<style type="text/css">
+  <meta charset="utf-8"/>
 
-	::selection { background-color: #E13300; color: white; }
-	::-moz-selection { background-color: #E13300; color: white; }
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 
-	body {
-		background-color: #fff;
-		margin: 40px;
-		font: 13px/20px normal Helvetica, Arial, sans-serif;
-		color: #4F5155;
-	}
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
 
-	a {
-		color: #003399;
-		background-color: transparent;
-		font-weight: normal;
-	}
+  <meta name="description" content=""/>
 
-	h1 {
-		color: #444;
-		background-color: transparent;
-		border-bottom: 1px solid #D0D0D0;
-		font-size: 19px;
-		font-weight: normal;
-		margin: 0 0 14px 0;
-		padding: 14px 15px 10px 15px;
-	}
+  <meta name="author" content=""/>
 
-	code {
-		font-family: Consolas, Monaco, Courier New, Courier, monospace;
-		font-size: 12px;
-		background-color: #f9f9f9;
-		border: 1px solid #D0D0D0;
-		color: #002166;
-		display: block;
-		margin: 14px 0 14px 0;
-		padding: 12px 10px 12px 10px;
-	}
+  <title>Cuadro de Mando -  CLIMPI</title>
 
-	#body {
-		margin: 0 15px 0 15px;
-	}
+  <!-- loader-->
 
-	p.footer {
-		text-align: right;
-		font-size: 11px;
-		border-top: 1px solid #D0D0D0;
-		line-height: 32px;
-		padding: 0 10px 0 10px;
-		margin: 20px 0 0 0;
-	}
+  <link href="<?= base_url('public/assets/css/pace.min.css') ?>" rel="stylesheet"/>
 
-	#container {
-		margin: 10px;
-		border: 1px solid #D0D0D0;
-		box-shadow: 0 0 8px #D0D0D0;
-	}
-	</style>
+  <script src="<?= base_url('public/assets/js/pace.min.js') ?>"></script>
+
+  <!--favicon-->
+
+  <link rel="icon" href="<?= base_url('public/assets/images/favicon.ico') ?>" type="image/x-icon">
+
+  <!-- Bootstrap core CSS-->
+
+  <link href="<?= base_url('public/assets/css/bootstrap.min.css') ?>" rel="stylesheet"/>
+
+  <!-- animate CSS-->
+
+  <link href="<?= base_url('public/assets/css/animate.css') ?>" rel="stylesheet" type="text/css"/>
+
+  <!-- Icons CSS-->
+
+  <link href="<?= base_url('public/assets/css/icons.css') ?>" rel="stylesheet" type="text/css"/>
+
+  <!-- Custom Style-->
+
+  <link href="<?= base_url('public/assets/css/app-style.css') ?>" rel="stylesheet"/>
+
+  
+
 </head>
-<body>
 
-<div id="container">
-	<h1>Welcome to CodeIgniter!</h1>
 
-	<div id="body">
-		<p>The page you are looking at is being generated dynamically by CodeIgniter.</p>
 
-		<p>If you would like to edit this page you'll find it located at:</p>
-		<code>application/views/welcome_message.php</code>
+<body class="bg-theme bg-theme1">
 
-		<p>The corresponding controller for this page is found at:</p>
-		<code>application/controllers/Welcome.php</code>
 
-		<p>If you are exploring CodeIgniter for the very first time, you should start by reading the <a href="user_guide/">User Guide</a>.</p>
-	</div>
 
-	<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds. <?php echo  (ENVIRONMENT === 'development') ?  'CodeIgniter Version <strong>' . CI_VERSION . '</strong>' : '' ?></p>
-</div>
+
+
+
+
+<!-- Start wrapper-->
+
+ <div id="wrapper">
+
+
+
+ <div class="height-100v d-flex align-items-center justify-content-center">
+
+ 
+
+	<div class="card card-authentication1 mb-0">
+
+		<div class="card-body">
+
+		 <div class="card-content p-2">
+
+		 	<div class="text-center">
+
+		 		<img class="brand-logo mb-5" src="<?= base_url('public/assets/images/logo-icon.png') ?>" alt="logo icon">
+
+		 	</div>
+
+
+		    <form method="get" action="homember.html">
+
+			  <div class="form-group">
+
+			  <label for="exampleInputUsername" class="sr-only">Usuario</label>
+
+			   <div class="position-relative has-icon-right">
+
+				  <input type="text" id="exampleInputUsername" class="form-control input-shadow" placeholder="Escriba su usuario">
+
+				  <div class="form-control-position">
+
+					  <i class="icon-user"></i>
+
+				  </div>
+
+			   </div>
+
+			  </div>
+
+			  <div class="form-group">
+
+			  <label for="exampleInputPassword" class="sr-only">Contraseña</label>
+
+			   <div class="position-relative has-icon-right">
+
+				  <input type="password" id="exampleInputPassword" class="form-control input-shadow" placeholder="Escriba su contraseña">
+
+				  <div class="form-control-position">
+
+					  <i class="icon-lock"></i>
+
+				  </div>
+
+			   </div>
+
+			  </div>
+
+			<div class="form-row">
+
+			 <div class="form-group col-6">
+
+			   <div class="icheck-material-white">
+
+               
+
+			  </div>
+
+			 </div>
+
+			 <div class="form-group col-6 text-right">
+
+			  <a class="mb-3 text-light-2" href="authentication-reset-password.html">Olvidé mi contraseña</a>
+
+			 </div>
+
+			</div>
+
+			 <button type="submit" class="btn btn-light btn-block">INGRESAR AL CUADRO DE MANDO</button>
+
+			
+
+			  
+
+
+
+			 
+
+			 </form>
+
+		   </div>
+
+		  </div>
+
+
+
+	     </div>
+
+	  </div>
+
+    
+
+     <!--Start Back To Top Button-->
+
+    <a href="javaScript:void();" class="back-to-top"><i class="fa fa-angle-double-up"></i> </a>
+
+    <!--End Back To Top Button-->
+
+	
+
+
+
+	
+
+	</div><!--wrapper-->
+
+	
+
+  <!-- Bootstrap core JavaScript-->
+
+  <script src="<?= base_url('public/assets/js/jquery.min.js') ?>"></script>
+
+  <script src="<?= base_url('public/assets/js/popper.min.js') ?>"></script>
+
+  <script src="<?= base_url('public/assets/js/bootstrap.min.js') ?>"></script>
+
+	
+
+  <!-- horizontal-menu js -->
+
+  <script src="<?= base_url('public/assets/js/horizontal-menu.js') ?>"></script>
+
+  
+
+  <!-- Custom scripts -->
+
+  <script src="<?= base_url('public/assets/js/app-script.js') ?>"></script>
+
+  
 
 </body>
+
 </html>
+

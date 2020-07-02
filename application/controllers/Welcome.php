@@ -30,4 +30,14 @@ class Welcome extends CI_Controller {
 		// echo base_url();exit;
 		$this->load->view('secureport/dashboard');
 	}
+
+	public function dashboard2()
+	{
+		$this->load->view('secureport/dashboard2');
+	}
+
+	public function dashboard3()
+	{
+		$this->load->view('secureport/dashboard3');
+	}
 }

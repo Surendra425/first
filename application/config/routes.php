@@ -57,5 +57,7 @@ $route['translate_uri_dashes'] = FALSE;
 
 
 $route['dashboard'] = "welcome/dashboard";
+$route['dashboard2'] = "welcome/dashboard2";
+$route['dashboard3'] = "welcome/dashboard3";
 
 

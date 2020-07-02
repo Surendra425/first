@@ -27,17 +27,24 @@ class Welcome extends CI_Controller {
 
 	public function dashboard()
 	{
-		// echo base_url();exit;
-		$this->load->view('secureport/dashboard');
+		$data['title'] = "dashboard";
+		$data['script'] = ['index.js'];
+		$this->load->view('secureport/dashboard',$data);
 	}
 
 	public function dashboard2()
 	{
-		$this->load->view('secureport/dashboard2');
+		$data['title'] = "dashboard2";
+		$data['script'] = ['index2.js'];
+
+		
+		$this->load->view('secureport/dashboard2',$data);
 	}
 
 	public function dashboard3()
 	{
-		$this->load->view('secureport/dashboard3');
+		$data['title'] = "dashboard3";
+			$data['script'] = [];
+		$this->load->view('secureport/dashboard3',$data);
 	}
 }

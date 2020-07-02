@@ -98,20 +98,20 @@
 		    </div>
         <ul id="respMenu" class="horizontal-menu">
 			<li>
-                <a class="" href="homember.html">
+                <a class="" href="<?php echo base_url ('dashboard'); ?>">
                     <i class="zmdi zmdi-view-dashboard" aria-hidden="true"></i>
                     <span class="title">Etiquetas QR 2.0</span>
                 </a>
                 <!-- Level Two-->
             </li>
             <li>
-                <a class="" href="homember2.html">
+                <a class="" href="<?php echo base_url ('dashboard2'); ?>">
                     <i class="zmdi zmdi-chart"></i>
                     <span class="title">Bioseguridad</span>
                 </a>
             </li>
 			<li>
-                <a class="" href="homember3.html">
+                <a class="" href="<?php echo base_url ('dashboard3'); ?>">
                     <i class="zmdi zmdi-format-list-bulleted"></i>
                     <span class="title">Encuestas</span>
                 </a>

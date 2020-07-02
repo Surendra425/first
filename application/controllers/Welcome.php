@@ -21,6 +21,13 @@ class Welcome extends CI_Controller {
 	public function index()
 	{
 		// echo base_url();exit;
-		$this->load->view('welcome_message');
+		$this->load->view('secureport/login');
+	}
+
+
+	public function dashboard()
+	{
+		// echo base_url();exit;
+		$this->load->view('secureport/dashboard');
 	}
 }
